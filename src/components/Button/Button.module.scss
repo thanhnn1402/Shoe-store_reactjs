@@ -1,0 +1,39 @@
+.wrapper {
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    .left-icon {
+        margin-right: 16px;
+    }
+
+    .right-icon {
+        margin-left: 16px;
+    }
+}
+
+/* Rounded */
+.rounded {
+    border-radius: 999px;
+}
+
+/* Button types */
+.default {
+    background-color: #f2f4f6;
+    box-shadow: 0 5px 65px -10px rgba(0, 0, 0, 0.4);
+    color: var(--text-color);
+
+    &:hover {
+        background-color: var(--text-color);
+        color: #f2f4f6;
+    }
+}
+
+/* Button sizes */
+.medium {
+    padding: 20px 30px;
+}

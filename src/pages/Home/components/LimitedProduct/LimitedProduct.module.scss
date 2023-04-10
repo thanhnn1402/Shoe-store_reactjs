@@ -1,0 +1,62 @@
+.wrapper {
+    background-color: #f2f4f6;
+}
+
+.content {
+    max-width: var(--container-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.slider {
+    position: relative;
+    flex: 1;
+
+    .slick-slide {
+        width: 600px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        top: 50%;
+        font-size: 3rem;
+        color: var(--primary);
+        background-color: transparent;
+        transform: translateY(-50%);
+        transition: all 0.2s linear;
+        cursor: pointer;
+    }
+
+    .slick-prev {
+        left: -40px;
+    }
+
+    .slick-next {
+        right: -30px;
+    }
+}
+
+.info {
+    flex: 1;
+    padding: 0 50px;
+    .title {
+        font-size: 2rem;
+        color: var(--text-color);
+    }
+
+    .name {
+        margin-top: 30px;
+        font-size: 6rem;
+        color: var(--text-color);
+    }
+
+    .description {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 1.5rem;
+        color: #515357fc;
+    }
+}

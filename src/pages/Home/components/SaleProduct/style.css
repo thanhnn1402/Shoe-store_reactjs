@@ -1,0 +1,4 @@
+.slick-dots li.slick-active button {
+    transform: scale(1.1);
+    background-color: var(--primary);
+}

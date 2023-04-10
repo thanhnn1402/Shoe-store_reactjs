@@ -1,0 +1,39 @@
+.wrapper {
+    padding: 100px 0;
+    background-color: #f2f4f6;
+}
+
+.content {
+    max-width: var(--container-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.box-element {
+    padding: 20px;
+}
+
+.text-background {
+    h2 {
+        color: #4b4f580f;
+        font-size: 8em;
+        font-weight: 700;
+        line-height: 1em;
+    }
+}
+
+.inner-content {
+    margin-top: -70px;
+
+    .title {
+        margin-bottom: 42px;
+        font-size: 2rem;
+        color: var(--text-color);
+    }
+
+    .description {
+        color: #515357fc;
+    }
+}

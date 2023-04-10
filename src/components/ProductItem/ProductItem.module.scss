@@ -1,0 +1,128 @@
+.wrapper {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+
+    .thumbnail {
+        width: 100%;
+        transition: all 0.3s linear;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .sale-wrap {
+        position: absolute;
+        min-width: 5rem;
+        min-height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        padding: 2px 10px;
+        background-color: #54595f;
+        color: #fff;
+        cursor: default;
+    }
+}
+
+.actions {
+    position: absolute;
+    top: 24px;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-action {
+    position: relative;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+    background-color: #fff;
+    color: #333333;
+    transition: 0.2s linear;
+
+    &:hover {
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    &:hover span {
+        opacity: 1;
+    }
+
+    span {
+        min-width: 100px;
+        position: absolute;
+        display: inline-block;
+        right: 120%;
+        padding: 2px 8px;
+        font-size: 1.2rem;
+        color: #fff;
+        background-color: rgb(0, 0, 0, 0.8);
+        border-radius: 3px;
+        opacity: 0;
+        transition: opacity 0.25s linear;
+
+        &::after {
+            position: absolute;
+            display: block;
+            content: '';
+            top: 50%;
+            right: -11px;
+            transform: translateY(-50%);
+            border: 6px solid transparent;
+            border-left-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+
+.body {
+    margin-top: -5px;
+    padding: 50px 0;
+    background-color: #ededed;
+    text-align: center;
+
+    .category {
+        font-size: 1.3rem;
+        color: #515357fc;
+        margin-bottom: 6px;
+    }
+
+    .name {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--text-color);
+        margin-bottom: 6px;
+    }
+
+    .review {
+        margin-bottom: 6px;
+        font-size: 1.2rem;
+    }
+
+    .old-price {
+        margin-right: 8px;
+        font-size: 1.35rem;
+        font-weight: bold;
+        color: #87898ffc;
+        text-decoration: line-through;
+    }
+
+    .new-price {
+        font-size: 1.35rem;
+        font-weight: bold;
+        color: #515357fc;
+    }
+}
